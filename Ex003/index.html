@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(41, 37, 37);
+            color: white;
+            font: normal 18pt Arial;
+        }
+        #botao {
+            width: 100px;
+            height: 60px;
+            padding: 15px;
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Aprendendo <strong>DOM</strong></h1>
+    <p>Ola tudo bem como vai aqui vai o resultado do estudo e vamos escrevendo qualquer coisa </p>
+    <div id="botao" onclick="clicar()">Clique em mim</div>
+    <script>
+         /* var titulo = window.document.body
+        var copia = window.document.getElementsByTagName('p')[0]
+        window.document.write(copia.innerText) */
+
+        var a = window.document.getElementById('botao')
+        a.addEventListener('click', clicar)
+
+        function clicar() {
+            a.InnerText = 'Clicou'
+            a.style.background = 'red'
+            
+        }
+        
+
+
+
+
+
+        
+        
+
+    </script>
+
+
+
+
+
+
+
+    
+</body>
+</html>
